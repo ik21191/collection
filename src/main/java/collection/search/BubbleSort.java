@@ -23,6 +23,30 @@ public class BubbleSort {
             }
            }
         System.out.println("Sorted : " + Arrays.toString(array));
+        
+        
+
+		/*System.out.println("UnSorted Array : " + Arrays.toString(array));
+		// Outer loop - need n-1 iteration to sort n elements
+        for(int i=0; i < array.length -1; i++){
+          
+            //Inner loop to perform comparision and swapping between adjacent numbers
+            //After each iteration one index from last is sorted
+            for(int j= 0; j<(array.length-1) -i; j++){
+              
+                //If current number is greater than swap those two
+                if(array[j] < array[j+1]){
+                    int temp = array[j];
+                    array[j] = array[j+1];
+                    array[j+1] = temp;
+                }
+                
+
+               
+            }
+           }
+        System.out.println("Sorted : " + Arrays.toString(array));*/
+        
         }
 
 	
