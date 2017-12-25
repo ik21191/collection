@@ -8,7 +8,7 @@ import java.util.List;
 class UserDefinedClass {
 	public static void main(String[] args) {
 		// Create a list
-		List<Domain> list = new ArrayList<Domain>();
+		List<Domain> list = new ArrayList<>();
 		list.add(new Domain(10, "quiz.geeksforgeeks.org"));
 		list.add(new Domain(20, "practice.geeksforgeeks.org"));
 		list.add(new Domain(30, "code.geeksforgeeks.org"));

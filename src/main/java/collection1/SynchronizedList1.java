@@ -5,7 +5,7 @@ public class SynchronizedList1
 {
 	public static void main(String[] args) 
 	{
-		List<String> list = new ArrayList<String>();
+		List<String> list = new ArrayList<>();
 		list.add(null);
 		list.add("Imran Khan");
 		synchronized(list){
@@ -14,7 +14,7 @@ public class SynchronizedList1
 		          System.out.println(i.next());}
 		}
 		System.out.println(list.contains(null));
-		List<Student> sList = new ArrayList<Student>();
+		List<Student> sList = new ArrayList<>();
 		sList.add(new Student("Imran Khan"));
 		sList.add(new Student("Vinay Kumar"));
 		for(Object o : sList)
