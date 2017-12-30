@@ -13,7 +13,7 @@ public class SortingListOfObject1
     }
     public static void main(String ar[])
     {
-        List<Employee> list=new ArrayList<Employee>();
+        List<Employee> list=new ArrayList<>();
         list.add(new Employee("ZZ","Khan",7000));
         list.add(new Employee("AA3","Kumar",1000));
         list.add(new Employee("DD","Kumar",2000));

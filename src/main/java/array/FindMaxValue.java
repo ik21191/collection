@@ -8,7 +8,7 @@ public class FindMaxValue {
 	static int findLargest(int[] values) {
 		int minIndex = 0; // start with 0th element as min
 		for (int i = 1; i < values.length; i++) {
-			if (values[i] > values[minIndex]) {
+			if (values[i] < values[minIndex]) {
 				minIndex = i;
 			}
 		}

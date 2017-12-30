@@ -6,7 +6,7 @@ public class AddStudent
     {
         //TreeSet<Student> list=new TreeSet<Student>();
         //TreeSet<Student> list=new TreeSet<Student>(new CourceComparator());
-        TreeSet<Student> list = new TreeSet<Student>(new FeeComparator());
+        TreeSet<Student> list = new TreeSet<>(new FeeComparator());
         list.add(new Student(7000,"Imran Khan","j2ee"));
         list.add(new Student(6500,"Vinay Kumar","php"));
         list.add(new Student(8500,"Abhisek Dua","mysql"));

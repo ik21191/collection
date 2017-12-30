@@ -8,7 +8,7 @@ public class CollectionsBinarySearch {
     	return Collections.binarySearch(list, 14);
     }
     public static void main(String[] args) {
-    	List<Integer> al = new ArrayList<Integer>();
+    	List<Integer> al = new ArrayList<>();
         al.add(1);
         al.add(2);
         al.add(3);

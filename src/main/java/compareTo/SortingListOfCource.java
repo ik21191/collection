@@ -12,8 +12,8 @@ public class SortingListOfCource
 		return list;
 	}
 	public static void main(String[] args) {
-		List<Cource> myList = new ArrayList<Cource>();
-		List<Cource> toSortList = new ArrayList<Cource>();
+		List<Cource> myList = new ArrayList<>();
+		List<Cource> toSortList = new ArrayList<>();
 		myList.add(new Cource(3, "Core Java", 500));
 		myList.add(new Cource(5, "Accounts", 400));
 		myList.add(new Cource(1, "Linux", 800));
