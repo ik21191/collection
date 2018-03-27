@@ -4,7 +4,7 @@ public class Cource
 	int id;
 	String name;
 	double fees;
-	String sortBy="desc_id";
+	String sortBy = "desc_id";
 	
 	public Cource() {
 		super();
@@ -40,8 +40,7 @@ public class Cource
 		this.sortBy = sortBy;
 	}
 	@Override
-	public String toString() 
-	{
+	public String toString() {
 		return "  "+id+"  "+name+"  "+fees+"  "+sortBy;
 	}
 }

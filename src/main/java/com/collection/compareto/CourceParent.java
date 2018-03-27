@@ -2,10 +2,8 @@ package com.collection.compareto;
 
 import java.util.Comparator;
 
-public class CourceParent extends Cource implements Comparator<Cource>
-{
-	public int compare(Cource o1, Cource o2) 
-	{
+public class CourceParent extends Cource implements Comparator<Cource> {
+	public int compare(Cource o1, Cource o2) {
 		if("desc_id".equalsIgnoreCase(getSortBy()))
 			return o2.id-o1.id;
 		else if("asc_name".equalsIgnoreCase(getSortBy()))

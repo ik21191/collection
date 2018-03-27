@@ -15,7 +15,6 @@ public class ListCapacityCheck1 {
 		
 		list.add("Imran Khan");
 		
-		
 		String str = "imran,khan";
 		String[] split = str.split(":");
 		System.out.println(split.length);
