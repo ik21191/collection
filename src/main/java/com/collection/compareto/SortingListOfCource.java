@@ -2,13 +2,11 @@ package com.collection.compareto;
 
 import java.util.*;
 
-public class SortingListOfCource 
-{
-	public static List<Cource> mySort(List<Cource> list)
-	{
+public class SortingListOfCource {
+	public static List<Cource> mySort(List<Cource> list) {
 		CourceParent p = new CourceParent();
 		p.setSortBy("desc_name");
-		Collections.sort(list,p);
+		Collections.sort(list, p);
 		return list;
 	}
 	public static void main(String[] args) {
@@ -21,8 +19,7 @@ public class SortingListOfCource
 		myList.add(new Cource(2, "English", 900));
 		System.out.println("Before..........");
 		System.out.println(myList + "\nAfter...........");
-		for(Cource c : myList)
-		{
+		for(Cource c : myList) {
 			Cource cource = c;
 			toSortList.add(cource);
 		}

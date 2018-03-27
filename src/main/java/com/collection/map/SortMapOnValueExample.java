@@ -12,7 +12,7 @@ public class SortMapOnValueExample {
  
 	public static void main(String[] args) {
  
-		Map<String, String> unsortMap = new HashMap<String, String>();
+		Map<String, String> unsortMap = new HashMap<>();
 		unsortMap.put("2", "B");
 		unsortMap.put("1", "A");
 		unsortMap.put("4", "D");
@@ -31,7 +31,7 @@ public class SortMapOnValueExample {
  
 	}
  
-	private static Map sortByComparator(Map unsortMap) {
+	private static Map<String, String> sortByComparator(Map unsortMap) {
  
 		List list = new LinkedList(unsortMap.entrySet());
  
@@ -54,7 +54,7 @@ return ((Comparable)((Map.Entry) (o1)).getValue()).compareTo(((Map.Entry) (o2)).
 	}
  
 	public static void printMap(Map<String, String> map){
-		for (Map.Entry entry : map.entrySet()) {
+		for (Map.Entry<String, String> entry : map.entrySet()) {
 			System.out.println("Key : " + entry.getKey() 
                                    + " Value : " + entry.getValue());
 		}

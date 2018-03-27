@@ -16,7 +16,7 @@ public static void main(String[] args) {
 		//list  = (List<String>) Collections.synchronizedCollection(list);//throw java.lang.ClassCastException
 		Collection<String> collection  = Collections.synchronizedCollection(list);//Will not throw java.lang.ClassCastException
 		System.out.println(collection);
-		list  = (List<String>) Collections.synchronizedList(list);
+		list  = Collections.synchronizedList(list);
 		Collections.synchronizedCollection(set);
 		System.out.println(list.get(0));
 		

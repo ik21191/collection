@@ -14,11 +14,15 @@ class UserDefinedClass {
 		list.add(new Domain(30, "code.geeksforgeeks.org"));
 		list.add(new Domain(40, "www.geeksforgeeks.org"));
 
-		Comparator<Domain> c = new Comparator<Domain>() {
+		/*Comparator<Domain> c = new Comparator<Domain>() {
 			public int compare(Domain u1, Domain u2) {
 				return u1.getId().compareTo(u2.getId());
 			}
-		};
+		};*/
+		
+		Comparator<Domain> c = (u1, u2)-> u1.getId().compareTo(u2.getId());
+		
+		
 		// Searching a domain with key value 10. To search
 		// we create an object of domain with key 10.
 		int index = Collections.binarySearch(list, new Domain(40, null), c);

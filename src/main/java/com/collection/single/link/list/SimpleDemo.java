@@ -2,8 +2,6 @@ package com.collection.single.link.list;
 
 import org.apache.log4j.Logger;
 
-import com.collection.array.AnnonymousArray1;
-
 public class SimpleDemo {
 	
 	private static final Logger log = Logger.getLogger(SimpleDemo.class);

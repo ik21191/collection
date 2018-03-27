@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class ArrayOfArrayList1 {
 	public static void main(String arr[]) {
-		ArrayList<A> list = new ArrayList<A>();
+		ArrayList<A> list = new ArrayList<>();
 		list.add(new A("Imran Khan"));
 		list.add(new A("Vinay Kumar"));
 		list.add(new A("Chandan Trikha"));
