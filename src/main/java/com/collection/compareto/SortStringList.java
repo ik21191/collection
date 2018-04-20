@@ -7,10 +7,17 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 
-class MyComparator implements Comparator<String> {
+class MyComparator1 implements Comparator<String> {
 	@Override
 	public int compare(String o1, String o2) {
 		return o2.compareTo(o1);
+	}
+}
+
+class MyComparator2 implements Comparator<String> {
+	@Override
+	public int compare(String o1, String o2) {
+		return o1.compareTo(o2);
 	}
 }
 
@@ -25,8 +32,10 @@ public class SortStringList {
 			list.add("A");
 			list.add("C");
 			
-			Collections.sort(list, new MyComparator());
-			log.info(list);
+			Collections.sort(list, new MyComparator1());
+			log.info("Sorted list using Collections.sort: Descending- " + list);
+			list.sort(new MyComparator2());
+			log.info("Sorted list using Collections.sort: Ascending- " + list);
 	}
 
 }

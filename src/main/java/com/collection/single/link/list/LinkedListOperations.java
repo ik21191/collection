@@ -5,7 +5,7 @@ import org.apache.log4j.Logger;
 public class LinkedListOperations {
 	private static final Logger log = Logger.getLogger(LinkedListOperations.class);
 
-	private static MyNode myLinkedList = null;
+	private static MyNode myLinkedList;
 	public static void main(String[] args) {
 		
 		MyNode node1 = new MyNode(10);

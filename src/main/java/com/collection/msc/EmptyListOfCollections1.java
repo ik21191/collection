@@ -6,7 +6,7 @@ public class EmptyListOfCollections1
     {
     	List<String> fixedSizeList = Arrays.asList(new String[]{"Imran", "Arpit", "Gautam Kumar"});
 		//fixedSizeList.add("Rahul");//throw UnsupportedOperationException
-		List<String> normalList = new ArrayList<String>();
+		List<String> normalList = new ArrayList<>();
 		normalList.add("ABC");
 		List<String> list = Collections.emptyList();
 		//list = normalList;

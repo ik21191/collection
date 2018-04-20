@@ -12,7 +12,7 @@ public class Set1
          */
 
         hashSet.add("AA");
-        hashSet.add(null);
+        System.out.println("Adding null value: " + hashSet.add(null));
         System.out.println(hashSet.size());
         hashSet2 = hashSet;
         TreeSet<String> treeSet = new TreeSet<String>();

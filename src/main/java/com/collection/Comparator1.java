@@ -82,7 +82,7 @@ public class Comparator1
 {
 	public static void main(String[] args) 
 	{
-		TreeSet<Org> tset=new TreeSet<Org>(new SortWithId());
+		TreeSet<Org> tset=new TreeSet<>(new SortWithId());
 		tset.add(new Org(103,"D"));
 		tset.add(new Org(101,"X"));
 		tset.add(new Org(104,"A"));
@@ -94,7 +94,7 @@ public class Comparator1
 			System.out.println(org.id+"     "+org.orgName);
 		}
 		System.out.println("sorting list...............Collections.sort(List, Comparator)");
-		List<Student1> list=new ArrayList<Student1>();
+		List<Student1> list=new ArrayList<>();
 		list.add(new Student1(103,5001.55,"AA"));
 		list.add(new Student1(104,500.55,"AC"));
 		list.add(new Student1(102,5005.55,"AB"));

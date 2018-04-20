@@ -20,7 +20,7 @@ class UserDefinedClass {
 			}
 		};*/
 		
-		Comparator<Domain> c = (u1, u2)-> u1.getId().compareTo(u2.getId());
+		Comparator<Domain> c = (domain1, domain2)-> domain1.getId().compareTo(domain2.getId());
 		
 		
 		// Searching a domain with key value 10. To search
