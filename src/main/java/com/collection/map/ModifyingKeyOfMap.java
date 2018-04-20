@@ -3,7 +3,7 @@ import java.util.*;
 public class ModifyingKeyOfMap {
 	public static void main(String[] args) throws InterruptedException {
 		
-		/*Map<StringBuilder, String> map = new HashMap<StringBuilder, String>();
+		Map<StringBuilder, String> map = new HashMap<>();
 		final StringBuilder key1 = new StringBuilder("1");
 		StringBuilder key2 = new StringBuilder("2");
 		StringBuilder key3 = new StringBuilder("3");
@@ -18,16 +18,15 @@ public class ModifyingKeyOfMap {
 				try {
 					Thread.sleep(2000);
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
 		}, "Demo Thread");
 		t.start();
 		Thread.sleep(2000);
-		System.out.println("Finding value " + map.get(new StringBuilder("1")));*/
+		System.out.println("Finding value " + map.get(new StringBuilder("1")));
 		
-		Map<String, String> map2 = new HashMap<String, String>();
+		/*Map<String, String> map2 = new HashMap<String, String>();
 		final String k1 = "1";
 		String k2 = "2";
 		String k3 = "3";
@@ -42,13 +41,12 @@ public class ModifyingKeyOfMap {
 				try {
 					Thread.sleep(2000);
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
 		}, "Demo Thread");
 		t2.start();
-		System.out.println("Finding value in map " + map2.get("1"));
+		System.out.println("Finding value in map " + map2.get("1"));*/
 	}
 
 }
