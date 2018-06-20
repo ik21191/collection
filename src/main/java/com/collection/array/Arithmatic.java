@@ -4,7 +4,7 @@ public class Arithmatic {
 	public static void main(String[] args) {
 		System.out.println("Sum of the number is : " + sumOfNumbers(2345));
 		System.out.println("Lowercase Letters are : " + findSmallLetters("iMraN Khan"));
-		int updated[] = findDuplicateCharacter(new int[] {1, 8, 4, 1, 2, 8});
+		int updated[] = findDuplicateCharacter(new int[] {1, 8, 4, 1, 2, 8, 8});
 		for(int i = 0; i < updated.length; i++) {
 			System.out.print(updated[i] + " ");
 		}
