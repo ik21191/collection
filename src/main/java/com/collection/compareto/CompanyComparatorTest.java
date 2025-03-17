@@ -3,6 +3,7 @@ package com.collection.compareto;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class CompanyComparatorTest {
 
@@ -20,7 +21,10 @@ public class CompanyComparatorTest {
 		list.add(c4);
 		System.out.println("Before sort:");
 		System.out.println(list);
-		Collections.sort(list, new CompanyNameComparator());
+
+		//Collections.sort(list, new CompanyNameComparator());
+		//using java8
+		list = list.stream().sorted(new CompanyNameComparator()).collect(Collectors.toList());
 		System.out.println("After sort: ");
 		System.out.println(list);
 	}
